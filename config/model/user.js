@@ -10,6 +10,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  phone: {
+    type: String,
+    unique: true,
+  },
 });
 
 const User = mongoose.model("User", userSchema);
